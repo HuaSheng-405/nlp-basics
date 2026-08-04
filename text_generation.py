@@ -38,7 +38,7 @@ def generate(prompt,strategy = "greedy",max_length = 50,temperature = 1.0,top_k 
             temperature = temperature,pad_token_id = tokenizer.eos_token_id
         )
 
-    return tokenizer.decode(output[0],skip_special_tokens = True)
+    return tokenizer.decode(output[0],skip_special_tokens = True).replace(" ","")
 
 
 #3.对比四种策略
