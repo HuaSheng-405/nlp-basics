@@ -2,9 +2,9 @@ import torch
 from transformers import AutoModelForCausalLM,AutoTokenizer
 
 #1.加载GPT-2中文模型
-model_name = "uer/gpt2-chinese-cluecorpussmall"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
+model_path = "D:/learn/llm/nlp-basics/model/Qwen2.5-0.5B"
+tokenizer = AutoTokenizer.from_pretrained(model_path)
+model = AutoModelForCausalLM.from_pretrained(model_path)
 
 #GPT-2的tokenizer没有pad_token 补一个
 tokenizer.pad_token = tokenizer.eos_token
