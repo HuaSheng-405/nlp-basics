@@ -162,7 +162,7 @@ if __name__ == '__main__':
     train_dataset,val_dataset,bio_labels,id_to_label,label_to_id = get_dataset(tokenizer)
     #2.使用预训练的bert模型
     model = AutoModelForTokenClassification.from_pretrained(
-        "bert-base-chinese",num_labels = len(bio_labels),id2label = id_to_label,label2id = label_to_id
+        "bert-base-chinese",num_labels = len(bio_labels),id2label = id_to_label,label_to_id = label_to_id
     )
     model.to(device)
     #3.构建数据加载器
