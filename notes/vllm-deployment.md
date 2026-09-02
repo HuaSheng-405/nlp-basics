@@ -57,9 +57,9 @@ vLLM: 请求1: [====完成]               ← 请求1 生成了 10 个 token 就
 ### 最终可行的版本矩阵
 
 ```
-环境: WSL2 + Ubuntu 24.04 + venv
+环境: WSL2 + Ubuntu 22.04LTS + venv
 vllm==0.8.5.post1
-transformers==4.46.3（或更低，需保留 all_special_tokens_extended）
+transformers==4.57.0（或更低，需保留 all_special_tokens_extended）
 torch==2.6.0
 ```
 
